@@ -10,7 +10,7 @@ Dies ist das offizielle öffentliche Repository der **NOVA-Chat Webseite**.
 ## Nutzung der Webseite
 
 Die Webseite ist vollständig öffentlich und kann direkt über GitHub Pages besucht werden:  
-[https://sicherheitiminternet.github.io/Nova-Chat-Webseite/index.html)
+[https://sicherheitiminternet.github.io/NOVA-Website/)
 
 
 
