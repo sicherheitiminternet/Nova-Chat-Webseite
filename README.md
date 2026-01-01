@@ -34,4 +34,4 @@ Wenn du NOVA-Chat nutzen möchtest, lade das Projekt bitte ausschließlich über
 
 
 
-© 2025 NOVA-Chat
+<p align="center"><strong>© 2026 NOVA-Chat</strong></p>
