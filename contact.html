@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA-Chat - Kontakt</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --primary: #1e90ff;
+  --secondary: #11121a;
+  --text: #e0e0e0;
+  --accent: #1e90ffcc;
+  --font: 'Inter', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font); background:var(--bg); color:var(--text); height:100vh; display:flex; flex-direction:column; }
+header { position: fixed; top:0; left:0; width:100%; background:var(--secondary); display:flex; justify-content:space-between; align-items:center; padding:1.5rem 4rem; border-bottom:1px solid #222; z-index:1000; }
+header h1 { color:var(--primary); font-size:2.2rem; font-weight:700; }
+nav a { color:var(--text); text-decoration:none; margin-left:2rem; font-weight:600; font-size:1.1rem; position:relative; }
+nav a::after { content:''; position:absolute; width:0%; height:3px; background:var(--primary); left:0; bottom:-5px; transition:0.3s; }
+nav a:hover::after { width:100%; }
+main { flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+h2 { font-size:3rem; color:var(--primary); margin-bottom:1rem; }
+.contact-list { display:flex; flex-direction:column; gap:2rem; margin-top:2rem; }
+.contact-list a { text-decoration:none; color:var(--text); background:#11121a; padding:1rem 2rem; border-radius:20px; font-size:1.2rem; transition:0.3s; }
+.contact-list a:hover { background:var(--primary); color:#000; }
+footer { text-align:center; padding:3rem; background:var(--secondary); border-top:1px solid #222; font-size:1rem; color:#888; }
+@media(max-width:768px){ header{padding:1rem 2rem;} nav a{margin-left:1rem;font-size:1rem;} h2{font-size:2.5rem;} .contact-list a{padding:0.9rem 1.5rem; font-size:1.05rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>NOVA-Chat</h1>
+    <nav>
+    <a href="index.html">Home</a>
+	<a href="agb.html">AGBs</a>
+	<a href="datenschutz.html">Datenschutzerklärung</a>
+	<a href="chat_rules.html">Chat-Regeln</a>
+    <a href="downloads.html">Download</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Kontakt</h2>
+  <div class="contact-list">
+    <a href="mailto:info@novachat.de">Email senden</a>
+    <a href="https://discord.gg/deinserver" target="_blank">Discord</a>
+    <a href="tel:+4100000000">Telefon</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 NOVA-Chat. Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>

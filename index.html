@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA-Chat - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --primary: #1e90ff;
+  --secondary: #11121a;
+  --text: #e0e0e0;
+  --accent: #1e90ffcc;
+  --font: 'Inter', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); height:100vh; }
+header { position: fixed; top:0; left:0; width:100%; background:var(--secondary); display:flex; justify-content:space-between; align-items:center; padding:1.5rem 4rem; border-bottom:1px solid #222; z-index:1000; }
+header h1 { color:var(--primary); font-size:2.2rem; font-weight:700; }
+nav a { color:var(--text); text-decoration:none; margin-left:2rem; font-weight:600; font-size:1.1rem; position:relative; }
+nav a::after { content:''; position:absolute; width:0%; height:3px; background:var(--primary); left:0; bottom:-5px; transition:0.3s; }
+nav a:hover::after { width:100%; }
+main { padding-top:120px; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; text-align:center; }
+h2 { font-size:3rem; color:var(--primary); margin-bottom:1rem; }
+p { font-size:1.3rem; max-width:800px; line-height:1.8; margin-bottom:2rem; }
+.btn { padding:1rem 3rem; background:var(--primary); color:#fff; font-weight:700; text-decoration:none; border-radius:50px; font-size:1.2rem; transition:0.3s; }
+.btn:hover { background:var(--accent); }
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:3rem; margin-top:3rem; width:100%; max-width:1200px; }
+.feature { background:#1a1a2e; padding:2.5rem; border-radius:20px; transition:0.3s; }
+.feature:hover { transform:translateY(-8px); box-shadow:0 15px 30px rgba(30,144,255,0.3); }
+.feature h3 { color:var(--primary); font-size:1.6rem; margin-bottom:0.75rem; }
+.feature p { color:#ccc; font-size:1.05rem; }
+footer { text-align:center; padding:3rem; background:var(--secondary); border-top:1px solid #222; font-size:1rem; color:#888; margin-top:3rem; }
+@media(max-width:768px){ header{padding:1rem 2rem;} nav a{margin-left:1rem;font-size:1rem;} h2{font-size:2.5rem;} p{font-size:1.1rem;} .btn{padding:0.9rem 2rem;font-size:1.05rem;} .feature h3{font-size:1.3rem;} .feature p{font-size:0.95rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>NOVA-Chat</h1>
+  <nav>
+    <a href="index.html">Home</a>
+	<a href="agb.html">AGBs</a>
+	<a href="datenschutz.html">Datenschutzerklärung</a>
+	<a href="chat_rules.html">Chat-Regeln</a>
+    <a href="downloads.html">Download</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Willkommen bei NOVA-Chat</h2>
+	<p>Ein moderner und sicherer Chat-Client mit Echtzeit-Nachrichten und integriertem Musikplayer. Einfach zu bedienen, zuverlässig und übersichtlich.</p>
+	<a href="downloads.html" class="btn">Jetzt herunterladen</a>
+
+<div class="features">
+  <div class="feature"><h3>Echtzeit Chat</h3><p>Kommunikation direkt und ohne Verzögerung.</p></div>
+  <div class="feature"><h3>Modernes Design</h3><p>Dark Mode mit stilvollem Blau, übersichtlich und angenehm zu bedienen.</p></div>
+  <div class="feature"><h3>Sicher</h3><p>Standardmäßiger Schutz deiner Daten und Privatsphäre.</p></div>
+  <div class="feature"><h3>Einfacher Chat Client</h3><p>Leicht zu benutzen, stabil und zuverlässig für normale Chat-Kommunikation.</p></div>
+  <div class="feature"><h3>Musikplayer</h3><p>Eigene Playlists, niemand kann deine Playlist sehen, inklusive Autowiederholung.</p></div>
+</div>
+
+</main>
+
+<footer>
+  &copy; 2026 NOVA-Chat. Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>
