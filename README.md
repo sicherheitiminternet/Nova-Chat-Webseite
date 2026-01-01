@@ -18,7 +18,7 @@ Die Webseite ist vollständig öffentlich und kann direkt über GitHub Pages bes
 
 Wenn du NOVA-Chat nutzen möchtest, lade das Projekt bitte ausschließlich über den offiziellen **externen Download-Link** herunter:  
 
-[💾 NOVA-Chat Download](https://deinlink.com/download)
+[💾 NOVA-Chat Download](https://github.com/sicherheitiminternet/NOVA-Chat)
 
 > **Wichtig:** Bitte klone oder lade dieses GitHub-Repo **nicht** herunter, um NOVA-Chat auszuführen.  
 > Nur der offizielle Download-Link enthält alle notwendigen Dateien für die Nutzung.
