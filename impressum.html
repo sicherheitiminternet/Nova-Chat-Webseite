@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA-Chat - Impressum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+          --bg: #0a0a0f;
+          --primary: #1e90ff;
+          --secondary: #11121a;
+          --text: #e0e0e0;
+          --accent: #1e90ffcc;
+          --font: 'Inter', sans-serif;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); min-height:100vh; display:flex; flex-direction:column; }
+
+        /* Header & Navigation */
+        header.site-header {
+          position: fixed; top:0; left:0; width:100%; background: var(--secondary);
+          display:flex; justify-content:space-between; align-items:center;
+          padding:1.5rem 4rem; border-bottom:1px solid #222; z-index:1000;
+        }
+        header.site-header h1 { color: var(--primary); font-size:2.2rem; font-weight:700; margin-bottom: 0; }
+        
+        nav a {
+          color: var(--text); text-decoration:none; margin-left:2rem; font-weight:600; font-size:1.1rem; position:relative;
+        }
+        nav a::after {
+          content:''; position:absolute; width:0%; height:3px; background:var(--primary); left:0; bottom:-5px; transition:0.3s;
+        }
+        nav a:hover::after { width:100%; }
+
+        /* Main Content Layout */
+        main {
+          flex:1;
+          padding:140px 4rem 4rem 4rem; 
+          max-width:1000px; margin:0 auto;
+          width: 100%;
+        }
+
+        .page-header { margin-bottom: 2rem; }
+        .subtitle { font-size: 1.2rem; color: #888; margin-top: 0.5rem; }
+
+        h1 { font-size:3rem; color:var(--primary); margin-bottom:1rem; }
+        h2 { font-size:2rem; color:var(--primary); margin-top:2.5rem; margin-bottom:1rem; border-bottom: 1px solid #222; padding-bottom: 0.5rem; }
+        p { font-size:1.1rem; line-height:1.8; margin-bottom:1rem; }
+        hr { border: 0; border-top: 1px solid #333; margin: 2rem 0; }
+
+        /* Impressum Spezifische Styles */
+        .info-table {
+            width:100%; border-collapse: collapse; margin: 1rem 0; background: #11121a; border-radius: 8px; overflow: hidden;
+        }
+        .info-table td { padding: 15px; border-bottom: 1px solid #222; }
+        .info-table tr:last-child td { border-bottom: none; }
+        .label { font-weight: 600; width: 30%; color: var(--primary); }
+
+        blockquote {
+            background: #1a1b26; border-left: 4px solid var(--primary); padding: 1.5rem; border-radius: 4px; color: #e0e0e0; margin: 1.5rem 0;
+        }
+
+        .license-box {
+            border: 1px solid #333; padding: 1.5rem; border-radius: 8px; background: #0d0d12;
+        }
+
+        .status-list { list-style: none; padding-left: 0; margin-top: 1rem; }
+        .status-list li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; }
+
+        /* Footer */
+        footer {
+          text-align:center; padding:3rem; background: var(--secondary); border-top:1px solid #222; font-size:1rem; color:#888;
+        }
+
+        /* Links */
+        a { color: var(--primary); text-decoration:none; }
+        a:hover { color: var(--accent); text-decoration: underline; }
+
+        /* Responsive */
+        @media(max-width:768px){
+          header.site-header { padding:1rem 2rem; flex-direction: column; gap: 1rem; text-align: center; }
+          nav a { margin: 0 0.5rem; font-size: 0.9rem; }
+          h1 { font-size:2.2rem; }
+          h2 { font-size:1.7rem; }
+          main { padding:180px 2rem 2rem 2rem; }
+          .label { width: 40%; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <h1>NOVA-Chat</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="chat_rules.html">Chat-Regeln</a>
+		<a href="Impressum.html">Impressum</a>
+    </nav>
+</header>
+
+<main>
+    <header class="page-header">
+        <h1>Impressum</h1>
+        <p class="subtitle">Rechtliche Informationen zum Projekt NOVA-Chat</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>1. Betreiberinformationen</h2>
+        <table class="info-table">
+            <tr>
+                <td class="label">Projekt:</td>
+                <td>NOVA-Chat Entwicklung</td>
+            </tr>
+            <tr>
+                <td class="label">Status:</td>
+                <td>Privates Projekt</td>
+            </tr>
+            <tr>
+                <td class="label">Kontakt:</td>
+                <td><a href="mailto:info.schweiz23@gmail.com">info.schweiz23@gmail.com</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>2. Haftungsausschluss</h2>
+        <blockquote shadow>
+            Die Nutzung der Software erfolgt ausdrücklich auf <strong>eigene Gefahr</strong>. 
+            Der Betreiber übernimmt keine Haftung für Schäden an Hardware, Software oder für Datenverlust. 
+            Da es sich um ein privates Projekt ohne Gewinnerzielungsabsicht handelt, erfolgt die Bereitstellung ohne jegliche Gewährleistung.
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>3. Urheberrecht & Lizenz</h2>
+        <div class="license-box">
+            <p>
+                Sämtliche Rechte an <strong>NOVA-Chat</strong> liegen beim Betreiber. 
+                Obwohl die Bereitstellung über GitHub erfolgt, ist dies <strong>kein Open-Source-Projekt</strong>.
+            </p>
+            <ul class="status-list">
+                <li style="color: #ff4d4d;"><span>❌</span> <strong>Verboten:</strong> Einsehen, Kopieren oder Verändern des Quellcodes.</li>
+                <li style="color: #ff4d4d;"><span>❌</span> <strong>Verboten:</strong> Dekompilierung oder Reverse-Engineering.</li>
+                <li style="color: #1e90ff;"><span>✅</span> <strong>Erlaubt:</strong> Nutzung der offiziellen Binärdateien.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Hostinghinweis</h2>
+        <p>
+            Die Distribution erfolgt via GitHub. Es gelten die Datenschutzbestimmungen der GitHub Inc. (Microsoft).
+        </p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 NOVA-Chat. Alle Rechte vorbehalten.
+</footer>
+
+</body>
+</html>

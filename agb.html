@@ -67,22 +67,105 @@ a:hover { color: var(--accent); }
 </head>
 <body>
 
-<header>
-  <h1>NOVA-Chat</h1>
-  <nav>
-    <a href="index.html">Home</a>
-	<a href="agb.html">AGBs</a>
-	<a href="datenschutz.html">Datenschutzerklärung</a>
-	<a href="chat_rules.html">Chat-Regeln</a>
-  </nav>
+<header class="site-header">
+    <h1>NOVA-Chat</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agb.html">AGBs</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="chat_rules.html">Chat-Regeln</a>
+        <a href="Features.html">Chat-Features</a>
+		<a href="Impressum.html">Impressum</a>
+    </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA-Chat - AGB</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --primary: #1e90ff;
+  --secondary: #11121a;
+  --text: #e0e0e0;
+  --accent: #1e90ffcc;
+  --font: 'Inter', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height:100vh; display:flex; flex-direction:column; }
+
+/* Header */
+header {
+  position: fixed; top:0; left:0; width:100%; background: var(--secondary);
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1.5rem 4rem; border-bottom:1px solid #222; z-index:1000;
+}
+header h1 { color: var(--primary); font-size:2.2rem; font-weight:700; }
+nav a {
+  color: var(--text); text-decoration:none; margin-left:2rem; font-weight:600; font-size:1.1rem; position:relative;
+}
+nav a::after {
+  content:''; position:absolute; width:0%; height:3px; background:var(--primary); left:0; bottom:-5px; transition:0.3s;
+}
+nav a:hover::after { width:100%; }
+
+/* Main Content */
+main {
+  flex:1;
+  padding:140px 4rem 4rem 4rem; /* Platz für Header */
+  max-width:1000px; margin:0 auto;
+}
+h1 { font-size:3rem; color:var(--primary); margin-bottom:1rem; }
+h2 { font-size:2rem; color:var(--primary); margin-top:2rem; margin-bottom:0.75rem; }
+p { font-size:1.1rem; line-height:1.8; margin-bottom:1rem; }
+ul { margin-left:1.5rem; margin-bottom:1rem; }
+li { margin-bottom:0.5rem; }
+
+/* Footer */
+footer {
+  text-align:center; padding:3rem; background: var(--secondary); border-top:1px solid #222; font-size:1rem; color:#888;
+}
+
+/* Links */
+a { color: var(--primary); text-decoration:underline; }
+a:hover { color: var(--accent); }
+
+/* Responsive */
+@media(max-width:768px){
+  header { padding:1rem 2rem; }
+  nav a { margin-left:1rem; font-size:1rem; }
+  h1 { font-size:2.5rem; }
+  h2 { font-size:1.7rem; }
+  p, li { font-size:1rem; }
+  main { padding:120px 2rem 2rem 2rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+    <h1>NOVA-Chat</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="chat_rules.html">Chat-Regeln</a>
+		<a href="Impressum.html">Impressum</a>
+    </nav>
 </header>
 
 <main>
-  <h1>Allgemeine Geschäftsbedingungen (AGB) - NOVA-Chat</h1>
+  <h1>Allgemeine Geschäftsbedingungen</h1>
   <p></p>
-  <h3><strong>Stand: 31. Dezember 2025<strong></h3>
+  <h3><strong>Stand: 15. Februar 2026</strong></h3>
   <p></p>
-  <h3><strong>Tritt in Kraft am: 1. Januar 2026<strong></h3> 
+  <h3><strong>Tritt in Kraft am: 15. Februar 2026</strong></h3>
+
 
   <h2>1. Definitionen</h2>
   <ul>
@@ -106,7 +189,7 @@ a:hover { color: var(--accent); }
   </ul>
 
   <h2>4. Registrierung und Kontosicherheit</h2>
-  <p>Jeder Nutzer muss ein individuelles Konto anlegen. Eine Weitergabe von Zugangsdaten an Dritte ist untersagt. Der Nutzer ist verpflichtet, sein Passwort vertraulich zu behandeln und für alle Aktivitäten, die über sein Konto erfolgen, selbst einzustehen. Der Betreiber behält sich das Recht vor, bei Verstoß das Konto zu sperren oder zu löschen.</p>
+  <p>Jeder Nutzer muss ein individuelles Konto anlegen. Eine Weitergabe von Zugangsdaten an Dritte ist untersagt. Der Nutzer ist verpflichtet, sein Passwort vertraulich zu behandeln und für alle Aktivitäten, die über sein Konto erfolgen, selbst einzustehen.</p>
 
   <h2>5. Mindestalter und elterliche Zustimmung</h2>
   <p>Die Nutzung ist Personen ab 13 Jahren gestattet. Minderjährige unter 18 Jahren dürfen den Dienst nur mit vorheriger ausdrücklicher Zustimmung der Eltern oder Erziehungsberechtigten nutzen. Die Registrierung gilt als Bestätigung, dass diese Bedingungen erfüllt sind.</p>
@@ -133,22 +216,73 @@ a:hover { color: var(--accent); }
   </ul>
   <p>Die Haftungsbeschränkung gilt unbeschadet zwingender gesetzlicher Vorschriften.</p>
 
-  <h2>9. Sperrung und Kündigung</h2>
-  <p>Bei Verstößen gegen die AGB oder geltendes Recht kann der Betreiber Konten vorübergehend sperren oder dauerhaft löschen. Dies erfolgt nach Ermessen des Betreibers und ohne Vorab-Ankündigung, sofern ein sofortiges Handeln erforderlich ist.</p>
-
-  <h2>10. Änderungen der AGB</h2>
+  <h2>9. Änderungen der AGB</h2>
   <p>Der Betreiber behält sich das Recht vor, diese AGB jederzeit zu ändern. Änderungen werden den Nutzern rechtzeitig bekannt gegeben. Mit fortgesetzter Nutzung nach Bekanntgabe gelten die neuen AGB als akzeptiert.</p>
 
-  <h2>11. Datenschutz</h2>
-  <p>Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer <a href="privacy.html" target="_blank">Datenschutzerklärung</a>. Nutzer erklären sich durch Nutzung mit der Verarbeitung einverstanden, soweit sie für die Bereitstellung des Dienstes erforderlich ist.</p>
+  <h2>10. Datenschutz</h2>
+  <p>Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>. Nutzer erklären sich durch Nutzung mit der Verarbeitung einverstanden, soweit sie für die Bereitstellung des Dienstes erforderlich ist.</p>
+  
+  <h2>11. Eingeschränkte Administrationsrechte</h2>
+  <p>Der Nutzer nimmt zur Kenntnis, dass der Betreiber technisch bedingt nur über eingeschränkte Administrationsrechte verfügt:</p>
+  <ul>
+    <li><strong>Moderation:</strong> Der Betreiber kann einzelne Nachrichten löschen oder anpinnen, um die Ordnung im öffentlichen Chat zu wahren.</li>
+    <li><strong>Kein Ausschluss (Ban):</strong> Es besteht derzeit keine technische Möglichkeit, Nutzer dauerhaft zu sperren oder den Zugang zum Chat zu untersagen (Ban-Funktion).</li>
+    <li><strong>Öffentlicher Raum:</strong> Da NOVA-Chat ein rein öffentlicher Dienst ohne private Nachrichten (DMs) ist, findet die gesamte Kommunikation für alle Nutzer einsehbar statt.</li>
+  </ul>
+	
+  <h2>12. Haftungsbeschränkung</h2>
+  <p>
+    Der Betreiber haftet nicht für Schäden, die durch die zeitliche Verzögerung bei der Löschung 
+    von Inhalten entstehen, sofern er nicht vorsätzlich oder grob fahrlässig gehandelt hat. 
+    Da der Betreiber den Chat als Hobby-Projekt bereitstellt, besteht kein Anspruch auf 
+    sofortige Intervention bei Nutzerkonflikten.
+  </p>
+  
+  <h2>13. Moderationszeiten und Reaktionspflicht</h2>
+  <p>
+    Der Nutzer erkennt an, dass der Dienst von einer Privatperson betrieben wird. Eine lückenlose 
+    Echtzeit-Moderation (24/7) findet nicht statt. 
+  </p>
+  <ul>
+    <li><strong>Meldung von Verstößen:</strong> Nutzer können rechtswidrige Inhalte oder Verstöße gegen diese AGB per E-Mail an <a href="mailto:info.schweiz23@gmail.com">info.schweiz23@gmail.com</a> melden.</li>
+    <li><strong>Notice-and-Takedown:</strong> Der Betreiber wird erst aktiv, sobald er über die oben genannte E-Mail-Adresse oder durch eigene Einsicht Kenntnis von rechtswidrigen Inhalten erlangt. Eine proaktive Überwachung aller Nachrichten erfolgt nicht.</li>
+    <li><strong>Reaktionszeit:</strong> Meldungen werden innerhalb eines angemessenen zeitlichen Rahmens im Rahmen der persönlichen Kapazitäten des Betreibers bearbeitet.</li>
+  </ul>
 
-  <h2>12. Rechtsfolgen bei Verstößen</h2>
+  <h2>14. Besondere Bedingungen für den öffentlichen Chat</h2>
+  <p>Der Nutzer ist sich bewusst, dass alle gesendeten Nachrichten sofort für alle anwesenden Teilnehmer sichtbar sind. Es gibt keine privaten Chatbereiche. Der Nutzer ist selbst dafür verantwortlich, keine sensiblen oder privaten Daten im öffentlichen Bereich preiszugeben.</p>
+
+  <h2>15. Haftungsausschluss</h2>
+  <p>Die Nutzung erfolgt auf eigenes Risiko. Der Betreiber übernimmt keine Haftung für:</p>
+  <ul>
+    <li><strong>Nutzerverhalten:</strong> Der Betreiber haftet nicht für das Verhalten, die Wortwahl oder die Handlungen der Nutzer untereinander.</li>
+    <li><strong>Datenverlust:</strong> Da Daten lokal gespeichert werden, ist eine Wiederherstellung durch den Betreiber ausgeschlossen.</li>
+    <li><strong>Technische Störungen:</strong> Es besteht kein Anspruch auf unterbrechungsfreie Verfügbarkeit.</li>
+  </ul>
+
+  <h2>16. Rechtsfolgen bei Verstößen</h2>
   <p>Verstöße können zivil- und strafrechtliche Konsequenzen nach sich ziehen. Der Betreiber behält sich ausdrücklich vor, gerichtliche Schritte einzuleiten und Schadenersatzansprüche geltend zu machen.</p>
 
-  <h2>13. Rechtswahl und Gerichtsstand</h2>
-  <p>Es gilt das Recht der Schweiz. Ausschließlicher Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist, soweit gesetzlich zulässig, der Wohnsitz des Betreibers oder dessen gesetzlicher Vertreter. Der Nutzer erkennt an, dass im Falle der Vertretung des Betreibers durch dessen gesetzliche Vertreter sämtliche Rechte und Pflichten des Betreibers im Rahmen der gesetzlichen Vorschriften wirksam ausgeübt werden. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+  <h2>17. Rechtswahl und Gerichtsstand</h2>
+  <p>
+     Auf die vertraglichen Beziehungen zwischen dem Betreiber und dem Nutzer findet das Recht der 
+     <strong>Schweiz</strong> Anwendung. Bei Verträgen mit Verbrauchern bleibt die Anwendung 
+     zwingender Konsumentenschutzbestimmungen des Staates, in dem der Nutzer seinen gewöhnlichen 
+     Aufenthalt hat, unberührt (Günstigkeitsprinzip).
+  </p>
+  <p>
+     Ausschließlicher Gerichtsstand für alle Streitigkeiten ist, soweit gesetzlich zulässig, 
+     <strong>das Bezirksgericht March</strong> (Kanton Schwyz). 
+  </p>
+
+  <h2>18. Salvatorische Klausel</h2>
+  <p>
+     Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, so bleibt die 
+     Wirksamkeit der übrigen Bestimmungen unberührt. Anstelle der unwirksamen Bestimmung 
+     tritt eine Regelung, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.
+  </p>
 	
-  <h2>14. Nutzung und Rechte des Betreibers</h2>
+  <h2>19. Nutzung und Rechte des Betreibers</h2>
   <p>Der Betreiber ist berechtigt, den NOVA-Chat jederzeit, nach eigenem Ermessen und ohne gesonderte Ankündigung, vorübergehend oder dauerhaft zu ändern, einzuschränken, auszusetzen oder einzustellen, soweit dies für Wartungsarbeiten, technische Verbesserungen, Sicherheitsmaßnahmen oder aus sonstigen sachlich gerechtfertigten Gründen erforderlich ist. Der Betreiber haftet nicht für vorübergehende oder dauerhafte Funktionsstörungen, Unterbrechungen oder Ausfälle des Dienstes.</p>
 
   <p>Der Betreiber ist zudem berechtigt, Inhalte zu entfernen oder den Zugriff auf bestimmte Funktionen einzuschränken, wenn dies erforderlich erscheint, um die Einhaltung dieser AGB, geltender Gesetze oder die Sicherheit der Plattform zu gewährleisten. Der Nutzer erkennt an, dass der Betreiber hierbei nach eigenem Ermessen handelt und daraus keine Ansprüche gegenüber dem Betreiber entstehen.</p>
@@ -156,7 +290,7 @@ a:hover { color: var(--accent); }
   <p>Durch die Nutzung des Dienstes räumt der Nutzer dem Betreiber das Recht ein, technische Maßnahmen zur Gewährleistung der Funktionsfähigkeit, Stabilität und Sicherheit der Plattform vorzunehmen, auch wenn dies vorübergehend zu Einschränkungen der Nutzerrechte führt.</p>
 
 
-  <h2>15. Zustimmung</h2>
+  <h2>20. Zustimmung</h2>
   <p>Mit der Nutzung von NOVA-Chat bestätigt der Nutzer, dass er diese AGB gelesen, verstanden und akzeptiert hat. Minderjährige Nutzer bestätigen zudem die Zustimmung ihrer Eltern oder Erziehungsberechtigten.</p>
 </main>
 
