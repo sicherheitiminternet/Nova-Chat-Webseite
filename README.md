@@ -4,7 +4,7 @@ Dies ist das offizielle öffentliche Repository der **NOVA-Chat Webseite**.
 
 ## ⚖️ Lizenz & Rechtliches
 
-Für dieses Repository und alle darin enthaltenen Dateien gilt die **[Absolute Nutzungsbeschränkung (LICENSE.md)](https://github.com/sicherheitiminternet/NOVA-Chat/blob/main/LICENSE.md)**.
+Für dieses Repository und alle darin enthaltenen Dateien gilt die **[Absolute Nutzungsbeschränkung von Nova-Chat (LICENSE.md)](https://github.com/sicherheitiminternet/NOVA-Chat/blob/main/LICENSE.md)**.
 
 Mit dem Besuch und der Nutzung dieser Webseite akzeptieren Sie diese Bedingungen sowie die dort verlinkten Dokumente:
 
