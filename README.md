@@ -5,9 +5,8 @@ Dies ist das offizielle öffentliche Repository der **NOVA-Chat Webseite**.
 ## ⚖️ Lizenz & Rechtliches
 
 Für dieses Repository und alle darin enthaltenen Dateien gilt die **[Absolute Nutzungsbeschränkung (LICENSE.md)](https://github.com/sicherheitiminternet/NOVA-Chat/blob/main/LICENSE.md)**.
-*(Hinweis: Der Link führt zum Hauptprojekt, da die Lizenzbedingungen identisch sind.)*
 
-Mit der Nutzung oder dem Herunterladen dieses Repositories akzeptieren Sie diese Bedingungen sowie die:
+Mit dem Besuch und der Nutzung dieser Webseite akzeptieren Sie diese Bedingungen sowie die dort verlinkten Dokumente:
 
 * **[AGB](https://sicherheitiminternet.github.io/Nova-Chat-Webseite/agb.html)**
 * **[Datenschutzerklärung](https://sicherheitiminternet.github.io/Nova-Chat-Webseite/datenschutz.html)**
@@ -16,7 +15,7 @@ Mit der Nutzung oder dem Herunterladen dieses Repositories akzeptieren Sie diese
 
 
 > **Hinweis:** Dieses Repository enthält nur die öffentliche Webseite und die Informationsseiten.
-> Das **Python-Projekt** selbst ist in einem separaten Repository und kann **nicht über dieses GitHub-Repo heruntergeladen werden**.
+> Das **Python-Projekt** selbst ist in einem separaten Repository und kann dort heruntergeladen werden.
 
 ## Nutzung der Webseite
 
@@ -26,14 +25,13 @@ Die Webseite ist vollständig öffentlich und kann direkt über GitHub Pages bes
 
 ## Download des NOVA-Chat Projekts
 
-Wenn du NOVA-Chat nutzen möchtest, lade das Projekt bitte ausschließlich über den offiziellen **externen Download-Link** herunter:
+Wenn du NOVA-Chat nutzen möchtest, lade das Projekt bitte ausschließlich über den offiziellen **Download-Link** im Haupt-Repository herunter:
 
-[💾 NOVA-Chat Download](https://github.com/sicherheitiminternet/NOVA-Chat)
+[💾 Zum NOVA-Chat Haupt-Repository](https://github.com/sicherheitiminternet/NOVA-Chat)
 
-> **Wichtig:** Bitte klone oder lade dieses GitHub-Repo **nicht** herunter, um NOVA-Chat auszuführen.
-> Nur der offizielle Download-Link im oben genannten Repository enthält alle notwendigen Dateien für die Nutzung.
+> **Wichtig:** Dieses Web-Repository enthält keine ausführbaren Programmdateien.
 
-## Inhalt des Repositories
+## Inhalt dieses Repositories
 
 * `index.html` – Startseite
 * `chat_rules.html` – Chat-Regeln
